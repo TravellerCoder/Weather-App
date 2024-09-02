@@ -40,8 +40,6 @@ function showWeatherData(data) {
     const minTemp = data.main.temp_min;
     const maxtemp = data.main.temp_max;
     const wind = data.wind.speed;
-    const sunset = data.sys.sunset;
-    const sunrise = data.sys.sunrise;
 
     const cityInfo = document.createElement('h2');
     cityInfo.textContent = `${cityName}`
@@ -61,8 +59,6 @@ function showWeatherData(data) {
     const windInfo = document.createElement('p');
     windInfo.textContent = `Viento: ${wind} KM/H`;
 
-    const sunInfo = document.createElement('p');
-    sunInfo.textContent = `Sunset: ${sunset} Sunrise: ${sunrise}`
 
 
 
@@ -72,6 +68,5 @@ function showWeatherData(data) {
     divResponseData.appendChild(feelsLikeInfo);
     divResponseData.appendChild(paramsInfo);
     divResponseData.appendChild(windInfo);
-    divResponseData.appendChild(sunInfo);
 }
 
