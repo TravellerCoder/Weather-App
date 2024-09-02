@@ -8,7 +8,6 @@ document.getElementById('searchButton').addEventListener('click', () => {
     if(city){
         fetchWeather(city)
     } else {
-        //todo: agregar validacion al input
         alert('Ingresa una ciudad')
     }
 })
@@ -21,6 +20,13 @@ function fetchWeather(city){
     .then( data => showWeatherData(data))
     .then( data => (data))
 }
+
+const emptySearch = document.getElementById('cityInput')
+let error = document.getElementById('error')
+
+if(error === ''){
+    showError(error, 'Ingresa una ciudad');
+} 
 
 function showWeatherData(data) {
     const divResponseData = document.getElementById('responseData');

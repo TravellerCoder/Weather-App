@@ -46,5 +46,10 @@ h1{
 
 #responseData{
     margin-top: 25px;
-    font-family: 18px;
+    font-family: 20px;
+    color:antiquewhite;
+}
+
+h2{
+    font-size: 35px;
 }
