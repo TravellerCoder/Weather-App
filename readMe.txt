@@ -1,0 +1,1 @@
+aplicacion de clima con busqueda por ciudad, consumiendo API de open weather.
